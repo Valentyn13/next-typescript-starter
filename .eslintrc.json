@@ -15,12 +15,7 @@
     "browser": true,
     "node": true
   },
-  "plugins": [
-    "@typescript-eslint",
-    "simple-import-sort",
-    "react",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "simple-import-sort", "react", "prettier"],
   "settings": {
     "react": {
       "version": "detect"
@@ -30,7 +25,7 @@
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-empty-function":"warn",
+    "@typescript-eslint/no-empty-function": "warn",
     "simple-import-sort/exports": "error",
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-empty-interface": [
@@ -44,54 +39,24 @@
       {
         "groups": [
           // Packages `react` related packages come first.
-          [
-            "^react",
-            "^@?\\w"
-          ],
+          ["^react", "^@?\\w"],
           // Side effect imports.
-          [
-            "^\\u0000"
-          ],
-          [
-            "^(@/store)(/.*|$)"
-          ],
-          [
-            "^(@/api)(/.*|$)"
-          ],
-          [
-            "^(@/components)(/.*|$)"
-          ],
-          [
-            "^(@/hooks)(/.*|$)"
-          ],
-          [
-            "^(@/utils)(/.*|$)"
-          ],
-          [
-            "^(@/enums|@/constants)(/.*|$)"
-          ],
-          [
-            "^(@/interfaces|@/types)(/.*|$)"
-          ],
+          ["^\\u0000"],
+          ["^(@/store)(/.*|$)"],
+          ["^(@/api)(/.*|$)"],
+          ["^(@/components)(/.*|$)"],
+          ["^(@/hooks)(/.*|$)"],
+          ["^(@/utils)(/.*|$)"],
+          ["^(@/enums|@/constants)(/.*|$)"],
+          ["^(@/interfaces|@/types)(/.*|$)"],
 
-          [
-            "^(@/assets)(/.*|$)"
-          ],
+          ["^(@/assets)(/.*|$)"],
           // Parent imports. Put `..` last.
-          [
-            "^\\.\\.(?!/?$)",
-            "^\\.\\./?$"
-          ],
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
           // Other relative imports. Put same-folder imports and `.` last.
-          [
-            "^\\./(?=.*/)(?!/?$)",
-            "^\\.(?!/?$)",
-            "^\\./?$"
-          ],
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
           // Style imports.
-          [
-            "^.+\\.?(css)$"
-          ]
+          ["^.+\\.?(css)$"]
         ]
       }
     ],
