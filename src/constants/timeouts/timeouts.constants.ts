@@ -1,0 +1,4 @@
+const TEST_TIMEOUT = 400;
+const FETCH_DELAY = 200;
+
+export { FETCH_DELAY, TEST_TIMEOUT };

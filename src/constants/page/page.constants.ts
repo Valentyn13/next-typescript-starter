@@ -1,0 +1,4 @@
+const ITEMS_PER_PAGE = 10;
+const ROWS_AMOUNT = 20;
+
+export { ITEMS_PER_PAGE, ROWS_AMOUNT };
