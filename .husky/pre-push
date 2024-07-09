@@ -1,0 +1,1 @@
+npm run lint:editor && npm run lint:type && npm run lint
