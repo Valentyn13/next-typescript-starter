@@ -1,1 +1,1 @@
-export { truncate } from "./truncate/truncate.util";
+export { truncate } from "./lib/truncate/truncate.util";
